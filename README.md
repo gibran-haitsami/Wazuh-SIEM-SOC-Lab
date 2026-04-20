@@ -23,3 +23,8 @@ Langkah awal adalah instalasi manager. Karena keterbatasan RAM, dilakukan optima
 
 ```bash
 curl -sO [https://packages.wazuh.com/4.7/wazuh-install.sh](https://packages.wazuh.com/4.7/wazuh-install.sh) && sudo bash wazuh-install.sh -a -i
+---
+
+### Penjelasan
+- ```bash → membuat **blok command yang bisa di copy**  
+- `![Wazuh Installation](Wazuh_install.png)`
