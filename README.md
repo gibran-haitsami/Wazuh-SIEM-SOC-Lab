@@ -22,9 +22,11 @@ Lingkungan lab dibangun menggunakan virtualisasi terisolasi untuk simulasi seran
 Langkah awal adalah instalasi manager. Karena keterbatasan RAM, dilakukan optimasi melalui bypass hardware check:
 
 ```bash
-curl -sO [https://packages.wazuh.com/4.7/wazuh-install.sh](https://packages.wazuh.com/4.7/wazuh-install.sh) && sudo bash wazuh-install.sh -a -i
+curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
+sudo bash wazuh-install.sh -a -i
+```
 ---
 
-### Penjelasan
-- ```bash → membuat **blok command yang bisa di copy**  
-- `![Wazuh Installation](Wazuh_install.png)`
+### Installation Result
+
+![Wazuh Installation](Wazuh_install.png)`
