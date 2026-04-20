@@ -30,3 +30,36 @@ sudo bash wazuh-install.sh -a -i
 ### Installation Result
 
 ![Wazuh Installation](Wazuh_install.png)`
+
+## 2. Endpoint Configuration (Windows Agent Connection)
+
+Setelah **Wazuh Manager** berhasil diinstal, langkah berikutnya adalah menghubungkan endpoint Windows ke server agar log keamanan dapat dikirim dan dianalisis oleh Wazuh SIEM.
+
+### Installation Process
+
+1. Unduh **Wazuh Agent installer (.msi)** dari dashboard Wazuh.
+2. Jalankan installer tersebut pada mesin Windows.
+3. Masukkan IP Address dari **Wazuh Manager** berikut:
+
+```bash
+192.168.100.10
+Selesaikan proses instalasi hingga agent berhasil terpasang.
+Start Wazuh Agent Service
+
+Buka PowerShell sebagai Administrator, kemudian jalankan perintah berikut untuk mengaktifkan service Wazuh Agent.
+```bash
+NET START Wazuh
+```
+Perintah ini akan memulai service agent sehingga endpoint Windows mulai mengirimkan log keamanan ke server Wazuh.
+
+Verification Result
+
+Setelah agent aktif, buka Dashboard Wazuh → Agents untuk memastikan endpoint telah berhasil terhubung.
+
+Indikator keberhasilan:
+
+Nama komputer Windows muncul pada daftar agent
+Status agent menunjukkan Active (warna hijau)
+
+Screenshot hasil koneksi agent:
+![agent](agent_activet.png)`
