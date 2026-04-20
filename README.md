@@ -41,8 +41,7 @@ Setelah **Wazuh Manager** berhasil diinstal, langkah berikutnya adalah menghubun
 2. Jalankan installer tersebut pada mesin Windows.
 3. Masukkan IP Address dari **Wazuh Manager** berikut:
 
-```bash
-192.168.100.10
+
 Selesaikan proses instalasi hingga agent berhasil terpasang.
 Start Wazuh Agent Service
 
@@ -62,4 +61,4 @@ Nama komputer Windows muncul pada daftar agent
 Status agent menunjukkan Active (warna hijau)
 
 Screenshot hasil koneksi agent:
-![agent](agent_activet.png)`
+![agent](agent_active.png)`
