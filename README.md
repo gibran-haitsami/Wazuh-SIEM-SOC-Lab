@@ -115,7 +115,6 @@ Tahap ini merepresentasikan aktivitas **Security Operations Center (SOC)** dalam
 
 1. Login ke **Wazuh Dashboard** melalui browser.
 2. Buka menu :Modules → Security Events
-3. 
 3. Periksa tabel **Security Alerts** untuk menemukan aktivitas yang mencurigakan.
 
 Pada skenario ini, hasil brute force attack akan menghasilkan alert seperti:
@@ -146,4 +145,80 @@ Alert pada tabel menunjukkan:
 - Level alert keamanan
 - Informasi agent yang terlibat
 
+## 5. Security Monitoring Dashboard
+
+Setelah proses instalasi, konfigurasi agent, dan simulasi serangan selesai dilakukan, tahap terakhir adalah melakukan pemantauan aktivitas keamanan melalui **Wazuh Security Dashboard**.
+
+Dashboard ini memberikan gambaran umum mengenai aktivitas keamanan sistem secara **real-time**, termasuk jumlah alert, aktivitas autentikasi, serta pemetaan teknik serangan berdasarkan framework **MITRE ATT&CK**.
+
+### Monitoring Overview
+
+Berikut tampilan dashboard keamanan yang dihasilkan oleh sistem Wazuh.
+
+![Wazuh Security Dashboard](security_dashboard.png)
+
+### Dashboard Analysis
+
+Berdasarkan tampilan dashboard tersebut, beberapa informasi keamanan dapat diamati:
+
+- **Total Alerts** menunjukkan jumlah keseluruhan event keamanan yang terdeteksi oleh sistem.
+- **Authentication Failure** menampilkan jumlah percobaan login yang gagal pada sistem.
+- **Authentication Success** menunjukkan aktivitas login yang berhasil.
+- Grafik **Alert Level Evolution** menampilkan perubahan jumlah alert berdasarkan waktu.
+- Diagram **Top MITRE ATT&CK Techniques** menunjukkan teknik serangan yang terdeteksi berdasarkan framework MITRE ATT&CK.
+
+Informasi ini membantu analis keamanan dalam memahami pola aktivitas mencurigakan serta mengidentifikasi potensi serangan yang terjadi pada sistem yang dipantau.
+
+## 6. Conclusion
+
+Lab ini menunjukkan implementasi sistem **Security Information and Event Management (SIEM)** menggunakan Wazuh untuk memantau aktivitas keamanan secara terpusat.
+
+Melalui simulasi serangan brute force terhadap layanan SSH, sistem berhasil mendeteksi percobaan login yang gagal dan menghasilkan alert keamanan yang kemudian ditampilkan pada dashboard monitoring.
+
+Selain itu, integrasi dengan framework **MITRE ATT&CK** memungkinkan sistem untuk mengklasifikasikan teknik serangan sehingga membantu analis keamanan dalam melakukan investigasi dan respon insiden.
+
+Implementasi ini menunjukkan bagaimana solusi SIEM dapat digunakan untuk meningkatkan visibilitas keamanan sistem serta mendeteksi aktivitas mencurigakan secara real-time.
+
+---
+
+## Skills Demonstrated
+
+Melalui proyek ini, beberapa keterampilan keamanan siber yang dipraktikkan antara lain:
+
+- Implementasi dan konfigurasi **SIEM platform**
+- Instalasi dan manajemen **Wazuh Manager dan Agent**
+- Monitoring dan analisis **security logs**
+- Simulasi serangan **SSH brute force attack**
+- Analisis alert keamanan pada dashboard SIEM
+- Interpretasi deteksi serangan menggunakan **MITRE ATT&CK framework**
+- Investigasi event keamanan pada lingkungan terpusat
+
+---
+
+## Security Monitoring Use Cases
+
+Implementasi Wazuh pada lab ini dapat digunakan untuk berbagai skenario pemantauan keamanan, seperti:
+
+- Deteksi **Brute Force Attack**
+- Monitoring aktivitas login pada sistem
+- Deteksi perubahan konfigurasi sistem
+- Pemantauan aktivitas pengguna yang mencurigakan
+- Deteksi akses tidak sah pada layanan jaringan
+- Analisis log keamanan dari berbagai endpoint
+
+Use case ini umum digunakan dalam lingkungan **Security Operations Center (SOC)** untuk membantu analis keamanan dalam mendeteksi dan merespon ancaman.
+
+---
+
+## Future Improvements
+
+Beberapa pengembangan yang dapat dilakukan untuk meningkatkan kemampuan sistem keamanan pada lab ini antara lain:
+
+- Integrasi dengan **Threat Intelligence Feed**
+- Implementasi **automated alert response**
+- Penambahan monitoring untuk lebih banyak endpoint
+- Integrasi dengan sistem notifikasi seperti **Email atau Slack alerts**
+- Penerapan **log monitoring untuk web server dan database**
+
+Pengembangan tersebut dapat meningkatkan kemampuan sistem dalam mendeteksi ancaman keamanan yang lebih kompleks.
 
