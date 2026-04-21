@@ -222,3 +222,17 @@ Beberapa pengembangan yang dapat dilakukan untuk meningkatkan kemampuan sistem k
 
 Pengembangan tersebut dapat meningkatkan kemampuan sistem dalam mendeteksi ancaman keamanan yang lebih kompleks.
 
+---
+
+## Author
+
+**Gibrann Haitsami**
+
+Cybersecurity Enthusiast with interests in:
+
+- Security Operations Center (SOC)
+- SIEM Implementation
+- Network Security
+- Threat Detection & Log Analysis
+
+This project demonstrates the implementation of a **Wazuh-based SIEM lab environment** for detecting and analyzing brute force attacks within a controlled virtual environment.
