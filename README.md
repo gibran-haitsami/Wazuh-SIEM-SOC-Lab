@@ -226,7 +226,7 @@ Pengembangan tersebut dapat meningkatkan kemampuan sistem dalam mendeteksi ancam
 
 ## Author
 
-**Gibrann Haitsami**
+**Gibran Hait sami**
 
 Cybersecurity Enthusiast with interests in:
 
