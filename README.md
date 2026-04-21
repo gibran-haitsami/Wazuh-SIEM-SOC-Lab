@@ -104,3 +104,46 @@ Terminal Kali Linux akan menampilkan banyak percobaan login yang gagal (**login 
 Screenshot berikut menunjukkan proses brute force yang sedang berjalan pada terminal Kali Linux.
 
 ![Hydra Brute Force](hydra_attack.png)
+
+## 4. Detection Analysis in Security Events Dashboard
+
+Setelah simulasi serangan brute force dilakukan, langkah berikutnya adalah menganalisis log keamanan yang dikumpulkan oleh Wazuh melalui dashboard monitoring.
+
+Tahap ini merepresentasikan aktivitas **Security Operations Center (SOC)** dalam melakukan investigasi terhadap aktivitas mencurigakan yang terjadi di sistem.
+
+### Investigation Process
+
+1. Login ke **Wazuh Dashboard** melalui browser.
+2. Buka menu :Modules → Security Events
+3. 
+3. Periksa tabel **Security Alerts** untuk menemukan aktivitas yang mencurigakan.
+
+Pada skenario ini, hasil brute force attack akan menghasilkan alert seperti:
+
+- `sshd: authentication failed`
+- `PAM: User login failed`
+
+Alert ini biasanya memiliki **Level 5 atau lebih tinggi**, yang menandakan adanya aktivitas login gagal berulang kali.
+
+### MITRE ATT&CK Mapping
+
+Wazuh juga secara otomatis memetakan aktivitas tersebut ke framework **MITRE ATT&CK**.
+
+Contoh teknik yang terdeteksi: T110 Brute Force
+
+Teknik ini termasuk dalam kategori **Credential Access**, yang menunjukkan adanya upaya memperoleh akses dengan menebak kredensial.
+
+### Detection Result
+
+Berikut adalah contoh alert yang dihasilkan oleh sistem setelah serangan brute force dilakukan.
+
+![Security Alerts Detection](security_alerts.png)
+
+Alert pada tabel menunjukkan:
+
+- Event `sshd: authentication failed`
+- Mapping ke teknik MITRE ATT&CK
+- Level alert keamanan
+- Informasi agent yang terlibat
+
+
