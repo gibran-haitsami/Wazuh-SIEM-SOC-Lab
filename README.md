@@ -29,7 +29,7 @@ sudo bash wazuh-install.sh -a -i
 
 ### Installation Result
 
-![Wazuh Installation](Wazuh_install.png)`
+![Wazuh Installation](images/Wazuh_install.png)`
 
 ## 2. Endpoint Configuration (Windows Agent Connection)
 
@@ -61,7 +61,7 @@ Nama komputer Windows muncul pada daftar agent
 Status agent menunjukkan Active (warna hijau)
 
 Screenshot hasil koneksi agent:
-![agent](agent_active.png)`
+![agent](images/agent_active.png)`
 
 ## 3. Attack Simulation (SSH Brute Force)
 
@@ -103,7 +103,7 @@ Terminal Kali Linux akan menampilkan banyak percobaan login yang gagal (**login 
 
 Screenshot berikut menunjukkan proses brute force yang sedang berjalan pada terminal Kali Linux.
 
-![Hydra Brute Force](hydra_attack.png)
+![Hydra Brute Force](images/hydra_attack.png)
 
 ## 4. Detection Analysis in Security Events Dashboard
 
@@ -136,7 +136,7 @@ Teknik ini termasuk dalam kategori **Credential Access**, yang menunjukkan adany
 
 Berikut adalah contoh alert yang dihasilkan oleh sistem setelah serangan brute force dilakukan.
 
-![Security Alerts Detection](security_alerts.png)
+![Security Alerts Detection](images/security_alerts.png)
 
 Alert pada tabel menunjukkan:
 
@@ -155,7 +155,7 @@ Dashboard ini memberikan gambaran umum mengenai aktivitas keamanan sistem secara
 
 Berikut tampilan dashboard keamanan yang dihasilkan oleh sistem Wazuh.
 
-![Wazuh Security Dashboard](security_dashboard.png)
+![Wazuh Security Dashboard](images/security_dashboard.png)
 
 ### Dashboard Analysis
 
