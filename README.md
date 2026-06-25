@@ -10,12 +10,14 @@ Lingkungan lab dibangun menggunakan virtualisasi terisolasi untuk simulasi seran
 
 | Component | Operating System | Role | Specifications |
 | :--- | :--- | :--- | :--- |
-| **SIEM Manager** | Ubuntu Server 22.04 LTS | Central Log Analysis | RAM 2GB + 5GB Swap |
+| **SIEM Manager** | Ubuntu Server 22.04 LTS | Central Log Analysis | RAM 2GB + 5GB Swap | 
 | **Endpoint Client** | Windows 11 Pro | Victim Machine | Wazuh Agent Installed |
 | **Attacker Node** | Kali Linux 2024.1 | Threat Actor | Hydra, Nmap, Metasploit |
 
 ---
-
+* Ubuntu Server 22.04 LTS (Wazuh Manager) - Berperan sebagai pusat analisis log jaringan terpusat (SIEM).
+* Windows 10 Enterprise (Wazuh Agent) - Terhubung melalui segmentasi jaringan IP privat (Virtual Private Network/LAN).
+  
 ## 🛠️ Implementation Steps
 
 ### 1. Wazuh Manager Deployment (Server Side)
@@ -209,6 +211,15 @@ Implementasi Wazuh pada lab ini dapat digunakan untuk berbagai skenario pemantau
 Use case ini umum digunakan dalam lingkungan **Security Operations Center (SOC)** untuk membantu analis keamanan dalam mendeteksi dan merespon ancaman.
 
 ---
+
+---
+
+## 🌐 Network Security & CCNA Alignment Analysis
+Melalui laboratorium SOC mandiri ini, beberapa konsep utama dari **Cisco Certified Network Associate (CCNA)** dan **Network Security** telah berhasil diimplementasikan, antara lain:
+
+1. **Transport & Application Layer Log Analysis (OSI Model):** Menganalisis telemetri log yang ditransmisikan melalui protokol TCP/UDP untuk mendeteksi anomali paket data dan aktivitas *unauthorized access*.
+2. **Endpoint and Network Visibility:** Memastikan visibilitas keamanan penuh pada *traffic* lokal antara Agen dan Manager guna mengidentifikasi tanda-tanda serangan siber sebelum menyebar ke infrastruktur jaringan yang lebih luas.
+3. **Centralized Logging Architecture:** Mengimplementasikan konsep tata kelola keamanan jaringan industri melalui pengiriman log terenkripsi dari *host* ke server monitoring pusat.
 
 ## Future Improvements
 
